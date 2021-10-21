@@ -1,0 +1,7 @@
+{
+  "name": "padelReserva",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

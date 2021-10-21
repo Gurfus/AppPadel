@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "padelReserva",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}

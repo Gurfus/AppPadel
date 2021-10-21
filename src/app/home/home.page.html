@@ -1,0 +1,35 @@
+<ion-header >
+  <ion-toolbar color= "light">
+    <ion-title ></ion-title>
+    <ion-img src="assets\icon\logo.png" style="width: auto;height: 90px; margin-top: 22px; align-items: center"></ion-img>
+  </ion-toolbar>
+</ion-header>
+<ion-content color="light" >
+  <ion-card color="secondary">
+    <ion-card-header>
+      <ion-card-subtitle>Reserva Padel</ion-card-subtitle>
+      <ion-card-title>Que vols fer?</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      <form >
+        <ion-row>
+          <ion-col>
+            <ion-button [routerLink]="['/login']" type="submit" color="primary" expand="block">Iniciar sesio</ion-button>
+          </ion-col>
+        </ion-row>
+          
+        <ion-row>
+          <ion-col>
+            <ion-button (click)="onRegister()" type="submit" color="primary" expand="block" >Registre'm</ion-button>
+          </ion-col>
+        </ion-row>
+      </form>
+    
+      
+    </ion-card-content>
+  </ion-card>
+  
+  <ion-card></ion-card>
+
+</ion-content>

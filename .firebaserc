@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "reserves-padel": {
+      "hosting": {
+        "app": [
+          "reserves-padel"
+        ]
+      }
+    }
+  }
+}

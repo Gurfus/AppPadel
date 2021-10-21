@@ -1,0 +1,58 @@
+<ion-header >
+  <ion-toolbar color= "light">
+    <ion-buttons slot="start">
+      <ion-back-button color="blue"></ion-back-button>
+    </ion-buttons>
+    <ion-title >Padel</ion-title>
+    <ion-img src="assets\icon\logo.png" style="width: 80px;height: 50px;margin-left: 280px;"></ion-img>
+  </ion-toolbar>
+</ion-header>
+<ion-content >
+  <ion-card color= "secondary">
+    
+    <ion-card-header>
+      <ion-card-subtitle>Reserva Padel</ion-card-subtitle>
+      <ion-card-title>Benvingut</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content > 
+      <form >
+        <ion-card color = "light">
+          <ion-item class="ion-no-margin" >
+            <ion-item > 
+              <ion-input placeholder="Email" type="email" position="floating" #Email required>
+                <ion-icon name="mail-open"></ion-icon>
+              </ion-input>
+            </ion-item>
+          </ion-item>
+        </ion-card>  
+
+
+        <ion-card color = "light">
+          <ion-item class="ion-no-margin" >
+            <ion-item > 
+              <ion-input placeholder="Contrasenya" type="password" position="floating" #Contrasenya required>
+                <ion-icon name="key"></ion-icon>
+              </ion-input>
+            </ion-item>
+          </ion-item>
+        </ion-card>     
+          
+        
+        
+    
+        <ion-row>
+          <ion-col>
+            <ion-button type="submit" (click)="onLogin(Email, Contrasenya)"color="primary" expand="block">Entrar</ion-button>
+            <a [routerLink]="['/forgot-password']" class="small-text">Forgot Password?</a>
+          </ion-col>
+        </ion-row>
+      </form>
+    
+      
+    </ion-card-content>
+  </ion-card>
+  <ion-img src="assets\icon\logo.png" style="width: auto;height: 90px; margin-top: 22px; align-items: center"></ion-img>
+</ion-content>
+
+

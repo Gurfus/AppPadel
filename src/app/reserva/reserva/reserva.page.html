@@ -1,0 +1,57 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Reserva</ion-title>
+    <ion-img src="assets\icon\logo.png" style="width: auto;height: 90px; margin-top: 22px; align-items: center"></ion-img>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <div>
+
+      <ion-calendar
+         [(ngModel)]="date" 
+         (change)="onChange($event)" 
+         (select)="onSelect($event)"
+         [options]="optionsMulti"
+         [type]="type" 
+         [format]="'YYYY-MM-DD'">
+      </ion-calendar>
+    </div>
+    
+  </ion-card>
+
+  <ion-card>
+    <ion-item>
+      <ion-label>Inici</ion-label>
+      <ion-datetime displayFormat="HH" 
+      hour-values="[9,10,11,12,13,14,15,16,17,18,19,20,21]"[min] 
+      value="{{horaInici | date: 'YYYY-MM-DD}}" 
+      [{ngModel}]="horaInici"
+      (ionChange)="cambioFechaI($event)"
+      placeholder="Tria hora.." ></ion-datetime>
+    </ion-item>
+
+  </ion-card>
+
+  <ion-card>
+    <ion-item>
+      <ion-label>Final</ion-label>
+      <ion-datetime displayFormat="HH" 
+      hour-values="[9,10,11,12,13,14,15,16,17,18,19,20,21]"[min] 
+      value="{{horaFinal | date: 'YYYY-MM-DD}}" º
+      [{ngModel}]="horaFinal"
+      (ionChange)="cambioFechaF($event)"
+      placeholder="Tria hora.." ></ion-datetime>
+    </ion-item>
+
+  </ion-card>
+  <div class = "row center">
+    <div class="col text-center">
+      <ion-button (click)="addNewEvent()">Reservar</ion-button>
+      
+     </div>
+  </div>
+  
+  
+</ion-content>
